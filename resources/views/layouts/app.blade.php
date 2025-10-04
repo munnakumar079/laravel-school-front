@@ -8,21 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    
     <!-- title -->
-    <title>{{tittle}}</title>
+    <title>@yield('title', 'ABC School')</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="{{assets('assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{assets('assets/css/all-fontawesome.min.css')}}">
-    <link rel="stylesheet" href="{{assets('assets/css/animate.min.css')}}">
-    <link rel="stylesheet" href="{{assets('assets/css/magnific-popup.min.css')}}">
-    <link rel="stylesheet" href="{{assets('assets/css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{assets('assets/css/style.css')}}">
-
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/all-fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 
 <body class="home-3">
-    @include(common.header)
+    @include('common.header')
 
     @yield('content')
 
@@ -33,20 +33,17 @@
     <!-- scroll-top end -->
 
     <!-- js -->
-    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="{{assets('assets/js/jquery-3.7.1.min.js')}}"></script>
-    <script src="{{assets('assets/js/modernizr.min.js')}}"></script>
-    <script src="{{assets('assets/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{assets('assets/js/imagesloaded.pkgd.min.js')}}"></script>
-    <script src="{{assets('assets/js/jquery.magnific-popup.min.js')}}"></script>
-    <script src="{{assets('assets/js/isotope.pkgd.min.js')}}"></script>
-    <script src="{{assets('assets/js/jquery.appear.min.js')}}"></script>
-    <script src="{{assets('assets/js/jquery.easing.min.js')}}"></script>
-    <script src="{{assets('assets/js/owl.carousel.min.js')}}"></script>
-    <script src="{{assets('assets/js/counter-up.js')}}"></script>
-    <script src="{{assets('assets/js/wow.min.js')}}"></script>
-    <script src="{{assets('assets/js/main.js')}}"></script>
-
+    <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ asset('assets/js/modernizr.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.appear.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.easing.min.js') }}"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/js/counter-up.js') }}"></script>
+    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
-
 </html>
